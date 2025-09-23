@@ -1,1 +1,12 @@
+max_size=512000
+
+for img in $(git diff --cached --name-only --diff-filter=AM | grep -E '\.(png|jpg|jpeg|gif)$'); do
+  size=$(wc -c <"$img")
+  if [ "$size" -gt "$max_size" ]; then
+    echo "Image $img is larger than 500KB ($size bytes)"
+    exit 1
+  fi
+done
+
 pnpm biome
+
