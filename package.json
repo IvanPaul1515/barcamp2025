@@ -1,14 +1,22 @@
 {
-  "name": "barcamp2025",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^5.13.10"
-  }
+	"name": "barcamp2025",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"prepare": "husky",
+		"biome": "biome check --write"
+	},
+	"dependencies": {
+		"astro": "5.13.10"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.2.4",
+		"@commitlint/cli": "19.8.1",
+		"@commitlint/config-conventional": "19.8.1",
+		"husky": "9.1.7"
+	}
 }
