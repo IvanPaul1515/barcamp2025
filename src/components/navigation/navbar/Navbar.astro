@@ -1,0 +1,121 @@
+---
+import { Image } from 'astro:assets'
+import { NAV_ITEMS } from '@lib/data'
+---
+
+<nav class="container relative flex justify-between w-full gap-6 mx-auto">
+  <!-- Brand Logo -->
+  <div class="relative inline-flex min-w-max">
+    <a href="#inicio" class="relative flex items-center">
+      <div class="relative flex mx-2 size-16">
+        <Image
+          id="theme-icon"
+          src="/favicon-2025-dark.svg"
+          alt="Logo Barcamp RD 2025"
+          width={64}
+          height={64}
+          priority
+        />
+      </div>
+      <div class="inline-flex text-lg font-semibold text-black dark:text-white">
+        Barcamp
+      </div>
+    </a>
+  </div>
+
+  <!-- Nav -->
+  <div
+    data-nav-overlay
+    aria-hidden="true"
+    class="fixed hidden inset-0 lg:!hidden bg-box-bg bg-opacity-50 backdrop-filter backdrop-blur-xl"
+  >
+  </div>
+  <!-- Navigation Links -->
+  <div
+    data-navbar
+    class="flex h-0 bg-white dark:bg-dark-bg overflow-hidden lg:!h-auto lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-body lg:bg-transparent dark:lg:bg-transparent"
+  >
+    <ul
+      class="flex flex-col items-center w-full gap-y-5 justify-evenly lg:flex-row"
+    >
+      {
+        NAV_ITEMS.map((item) => {
+          return (
+            <li>
+              <a
+                href={item.href}
+                class="py-3 text-lg font-medium text-black transition-colors duration-300 dark:text-white hover:text-primary"
+              >
+                {item.text}
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+
+  <!-- Theme Switcher & Hamburger -->
+  <div class="flex items-center p-2 gap-x-3">
+    <button
+      data-switch-theme
+      class="relative p-3 border border-gray-300 rounded-full dark:border-[#210e05]"
+    >
+      <div class="dark:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="black"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="hidden dark:block">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="white"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+          ></path>
+        </svg>
+      </div>
+
+      <span class="sr-only">switch theme</span>
+    </button>
+
+    <button
+      data-toggle-nav
+      data-open-nav="false"
+      class="relative flex flex-col h-auto outline-none lg:hidden w-7"
+    >
+      <span
+        id="line1"
+        class="w-6 h-0.5 rounded-full bg-black dark:bg-white transition-all duration-300 ease-linear"
+      ></span>
+      <span
+        id="line2"
+        class="w-6 origin-center mt-1 h-0.5 rounded-ful bg-black dark:bg-white transition-all duration-300 ease-linear"
+      ></span>
+      <span
+        id="line3"
+        class="w-6 mt-1 h-0.5 rounded-ful bg-black dark:bg-white transition-all duration-300 ease-linear"
+      ></span>
+      <span class="sr-only">togglenav</span>
+    </button>
+  </div>
+</nav>
