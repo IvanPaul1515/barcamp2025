@@ -1,0 +1,47 @@
+---
+import '@fontsource-variable/raleway'
+import '../styles/global.css'
+import Footer from '@components/navigation/footer/Footer.astro'
+import Navbar from '@components/navigation/navbar/Navbar.astro'
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-2025-light.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Barcamp RD 2025" />
+    <meta name="author" content="CICC 2024 - 2025" />
+    <title>Barcamp RD 2025</title>
+  </head>
+  <body
+    class="flex flex-col min-h-screen overflow-x-hidden bg-white gap-y-10 dark:bg-dark-bg"
+  >
+    <header
+      class="sticky top-0 z-50 py-2 mx-auto bg-white/90 dark:bg-dark-bg/90 min-w-dvw opacity-95 backdrop-blur-md"
+    >
+      <Navbar />
+    </header>
+
+    <main
+      class="container flex flex-col flex-1 p-4 mx-auto gap-y-10 lg:gap-y-20"
+    >
+      <slot />
+    </main>
+
+    <footer>
+      <Footer />
+    </footer>
+
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/accordion.js"></script>
+  </body>
+</html>
