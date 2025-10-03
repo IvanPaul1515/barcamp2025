@@ -1,28 +1,30 @@
+# Etapa de build
 FROM node:22-alpine AS builder
 
 WORKDIR /app
 
+# Copiar archivos de configuración y dependencias
 COPY package*.json ./
 COPY tsconfig.json ./
 COPY astro.config.mjs ./
 
 RUN corepack enable pnpm
-RUN pnpm install
+RUN pnpm install --no-frozen-lockfile
 
+# Copiar código fuente
 COPY src ./src
 COPY public ./public
 
+# Construir el proyecto
 RUN pnpm run build
 
-FROM node:22-alpine
+# Etapa de producción con Nginx
+FROM nginx:alpine AS runner
 
-WORKDIR /app
-RUN corepack enable pnpm
+# Copiar el build al directorio por defecto de Nginx
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-COPY --from=builder /app .
 
-RUN pnpm install
+EXPOSE 80
 
-EXPOSE 4321
-
-CMD ["pnpm", "run", "preview", "--host", "0.0.0.0"]
+CMD ["nginx", "-g", "daemon off;"]
