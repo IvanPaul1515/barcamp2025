@@ -55,10 +55,10 @@ const NAV_ITEMS = [
   //   href: "#charlistas",
   //   text: "Charlistas",
   // },
-  // {
-  //   href: "#patrocinadores",
-  //   text: "Patrocinadores",
-  // },
+  {
+    href: "#patrocinadores",
+    text: "Patrocinadores",
+  },
   {
     href: '#código-de-conducta',
     text: 'Código de Conducta',

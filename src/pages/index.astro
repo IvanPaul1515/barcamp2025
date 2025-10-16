@@ -5,40 +5,72 @@ import AccordionItem from '@components/accordion/AccordionItem.astro'
 import Title from '@components/title/Title.astro'
 import Layout from '@layouts/Layout.astro'
 import { ABOUT, NUMBERS } from '@lib/data'
+import Container from '@components/container/Container.astro'
 ---
 
 <Layout>
 	<!-- Hero Section -->
-	<section id="inicio">
-		<Image
-			id="hero"
-			src="/images/logo-2025-dark.png"
-			alt="Hero image"
-			width={1300}
-			height={384}
-			class="max-h-96"
-		/>
-		<div class="mx-auto mt-6 text-center">
-			<h1
-				class="font-bold text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight"
-			>
-				<span
-					class="text-transparent bg-clip-text bg-gradient-to-br from-[#FBA030] via-[#ED5E0B] to-[#361804]"
-				>
-					CÓDIGO, CONEXIÓN y COMUNIDAD
-				</span>
-			</h1>
-		</div>
+    <section id="inicio" class="relative pt-10 lg:pt-12 bg-transparent dark:bg-transparent">
+        <Image
+                id="hero"
+                src="/images/logo-2025-dark.png"
+                alt="Hero image"
+                width={1300}
+                height={384}
+                class="max-h-96 mx-auto"
+        />
 
-		<!-- Background Orange Spot -->
 
-		<span
-			class="absolute w-24 h-24 -z-10 right-4 bottom-24 rounded-3xl bg-primary blur-xl opacity-80"
-		></span>
-		<span
-			class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-[#FBA030] to-[#ED5E0B] absolute top-40 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-20 lg:opacity-40 skew-x-12 rotate-90"
-		></span>
-	</section>
+        <div class="mx-auto mt-10 max-w-7xl px-6 flex flex-col lg:flex-row items-start lg:items-center justify-center gap-10 lg:gap-16">
+            <div class="text-center lg:text-left lg:w-1/2">
+                <h1 class="font-bold text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight text-[#161616] dark:text-white">
+                    Vive la experiencia Barcamp 2025<br />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]">
+					Noviembre 15
+				</span><br />
+                    PUCMM Santiago
+                </h1>
+            </div>
+
+
+            <div
+                    class="flex flex-col items-center text-center gap-4 p-8
+           bg-[#FFF1E5] dark:bg-[#361804]
+           rounded-3xl border border-[#ED5E0B]/30
+           shadow-[0_8px_30px_rgba(251,160,48,0.25)]">
+                <img src="/images/ticket.png" alt="Ticket Barcamp 2025" class="w-48 h-auto mb-2" />
+
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]">
+                    ENTRADAS DISPONIBLES
+                </h2>
+
+                <p class="text-lg md:text-xl font-semibold text-[#361804] dark:text-white/80">
+                    CÓDIGO, CONEXIÓN y COMUNIDAD
+                </p>
+
+                <a
+                        href="https://appweb.pucmm.edu.do/RegistroEvento/EditInscripcionEvento.aspx?id=84"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-2 inline-block"
+                >
+                    <button class="px-6 py-3 text-lg font-semibold text-white rounded-2xl
+                       bg-gradient-to-r from-[#FBA030] via-[#FE9916] to-[#ED5E0B]
+                       hover:opacity-90 hover:shadow-lg hover:scale-105
+                       transition-all duration-300 ease-in-out cursor-pointer"
+                                >
+                        Adquiere tu entrada
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+        <!-- Background Orange Spot -->
+        <span class="absolute w-24 h-24 -z-10 right-4 bottom-24 rounded-3xl bg-primary blur-xl opacity-80"></span>
+        <span class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-[#FBA030] to-[#ED5E0B] absolute top-40 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-20 lg:opacity-40 skew-x-12 rotate-90"></span>
+    </section>
+
 
 	<!-- Number Section -->
 	<section id="numbers">
@@ -211,4 +243,133 @@ import { ABOUT, NUMBERS } from '@lib/data'
 			</div>
 		</div>
 	</section>
+
+    <!-- Patrocinadores -->
+    <section id="patrocinadores" class="py-20">
+        <Container className="space-y-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <Title>Patrocinadores</Title>
+            </div>
+
+            <!-- PLATINIUM  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- The Ksquare Group -->
+                <div class="relative p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#361804]
+                  border-2 border-[#FBA030] shadow-[0_8px_30px_rgba(251,160,48,0.25)]
+                  flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                    <span class="absolute -top-3 left-5 px-3 py-1 text-xs font-semibold rounded-full bg-[#FBA030] text-white shadow">
+                      GEEK PLATINIUM
+                    </span>
+                    <a href="https://www.theksquaregroup.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/sponsors/TheKsquareGroup.png" alt="The Ksquare Group"
+                             class="h-20 sm:h-24 lg:h-28 w-auto object-contain rounded-2xl" />
+                    </a>
+                </div>
+
+                <!-- NadServ -->
+                <div class="relative p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#361804]
+                  border-2 border-[#FBA030] shadow-[0_8px_30px_rgba(251,160,48,0.25)]
+                  flex items-center justify-center transition-transform duration-300 hover:scale-105">
+                    <span class="absolute -top-3 left-5 px-3 py-1 text-xs font-semibold rounded-full bg-[#FBA030] text-white shadow">
+                      GEEK PLATINIUM
+                    </span>
+                    <a href="https://nadserv.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/sponsors/NadServ.png" alt="NadServ"
+                             class="h-20 sm:h-24 lg:h-28 w-auto object-contain rounded-2xl" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- GOLD -->
+            <div class="flex justify-center">
+                <div class="relative p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#361804]
+                  border border-[#ED5E0B]/60 dark:border-[#FBA030]/70
+                  shadow-[0_8px_30px_rgba(251,160,48,0.2)]
+                  flex items-center justify-center transition-transform duration-300 hover:scale-105 max-w-4xl w-full">
+                    <span class="absolute -top-3 left-5 px-3 py-1 text-xs font-semibold rounded-full bg-[#FE9916] text-white shadow">
+                      GEEK GOLD
+                    </span>
+                    <a href="https://popularenlinea.com/pyme/Paginas/Home.aspx" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/sponsors/Popular.png" alt="Banco Popular"
+                             class="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-2xl" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- SILVER -->
+            <div class="flex justify-center">
+                <div class="relative p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#361804]
+                  border border-[#ED5E0B]/60 dark:border-[#FBA030]/70
+                  shadow-[0_8px_30px_rgba(251,160,48,0.2)]
+                  flex items-center justify-center transition-transform duration-300 hover:scale-105 max-w-3xl w-full">
+                    <span class="absolute -top-3 left-5 px-3 py-1 text-xs font-semibold rounded-full bg-[#ED5E0B] text-white shadow">
+                      GEEK SILVER
+                    </span>
+                    <a href="https://coopsanjose.com.do/sobre-nosotros/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/sponsors/CooperativaSanJose.png" alt="Cooperativa San José"
+                             class="h-16 sm:h-20 lg:h-24 w-auto object-contain rounded-2xl" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- GEEK -->
+            <div class="flex justify-center flex-wrap gap-6 mt-4">
+                <!-- CICC -->
+                <div class="relative p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#361804]
+              border border-gray-200 dark:border-[#FBA030]/60
+              transition-transform duration-300 hover:scale-105">
+                    <span class="absolute -top-3 left-5 px-3 py-1 text-xs font-semibold rounded-full bg-[#FBA030] text-white shadow">
+                      Geek
+                    </span>
+                    <a href="https://ce-icc.pucmm.edu.do/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/sponsors/cicc.png" alt="CICC"
+                             class="h-10 sm:h-16 w-auto object-contain rounded-2xl" />
+                    </a>
+                </div>
+
+                <!-- Avathartech -->
+                <div class="relative p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#361804]
+              border border-gray-200 dark:border-[#FBA030]/60
+              transition-transform duration-300 hover:scale-105">
+                <span class="absolute -top-3 left-5 px-3 py-1 text-xs font-semibold rounded-full bg-[#FBA030] text-white shadow">
+                  Geek
+                </span>
+                    <a href="https://avathartech.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/sponsors/avathar.png" alt="Avathartech"
+                             class="h-10 sm:h-16 w-auto object-contain rounded-2xl" />
+                    </a>
+                </div>
+
+                <!-- PUCMM -->
+                <div class="relative p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#361804]
+              border border-gray-200 dark:border-[#FBA030]/60
+              transition-transform duration-300 hover:scale-105">
+                    <span class="absolute -top-3 left-5 px-3 py-1 text-xs font-semibold rounded-full bg-[#FBA030] text-white shadow">
+                      Geek
+                    </span>
+                    <a href="https://www.pucmm.edu.do" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/sponsors/pucmm.png" alt="PUCMM"
+                             class="h-10 sm:h-16 w-auto object-contain rounded-2xl" />
+                    </a>
+                </div>
+
+                <!-- Alphnology -->
+                <div class="relative p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#361804]
+              border border-gray-200 dark:border-[#FBA030]/60
+              transition-transform duration-300 hover:scale-105">
+                <span class="absolute -top-3 left-5 px-3 py-1 text-xs font-semibold rounded-full bg-[#FBA030] text-white shadow">
+                  Geek
+                </span>
+                    <a href="https://www.alphnology.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/sponsors/alphnology.png" alt="Alphnology"
+                             class="h-10 sm:h-16 w-auto object-contain rounded-2xl" />
+                    </a>
+                </div>
+            </div>
+
+        </Container>
+    </section>
+
+
+
 </Layout>
