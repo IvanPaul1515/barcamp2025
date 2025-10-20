@@ -1,0 +1,68 @@
+---
+import { speakers } from '@lib/speakers.ts';
+import Title from '../title/Title.astro';
+import Modal from './Modal.astro';
+
+---
+<style>
+    .custom-scrollbar {
+        scrollbar-width: thin;
+        scrollbar-color: #ED5E0B #F3F4F6;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #F3F4F6;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #ED5E0B;
+        border-radius: 10px;
+        border: 2px solid #F3F4F6;
+    }
+
+</style>
+
+
+<section id="speakers" class="p-8 md:px-16 lg:px-32">
+    <div class="text-center mb-10">
+        <Title class="text-3xl md:text-3xl font-semibold text-heading-2">
+            Charlistas
+        </Title>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 md:px-16 lg:px-32 items-stretch">
+        {speakers.map((speaker) => {
+            const { id, name, title, charla, details, borderColor, imageUrl } = speaker;
+            return (
+                    <>
+                        <Modal id={`${id}`} name={`${name}`} title={`${title}`} charla={`${charla}`} details={`${details}`} borderColor={`${borderColor}`} imageUr={`${imageUrl}`}>
+                            <main slot="main" class="bg-box-bg w-full">
+                                <div class="bg-box-bg rounded-lg overflow-hidden w-full">
+                                    <div class="flex justify-between items-center p-4 border-b">
+                                        <h2 class="mt-2 text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FBA030] via-[#FE9916] to-[#ED5E0B]">
+                                            {name}
+                                        </h2>
+                                        <button slot="close" class="text-red-500 hover:text-gray-700 text-3xl">&times;</button>
+                                    </div>
+                                    <div class="p-4 h-64 overflow-y-scroll custom-scrollbar">
+                                        <p class="mt-1 text-heading-1 text-md">{details}</p>
+                                    </div>
+                                </div>
+                            </main>
+                        </Modal>
+                    </>
+            );
+        })}
+    </div>
+
+    <div id="modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
+        <div class="bg-white p-8 rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto relative">
+            <button id="close-modal" class="absolute top-0 right-2 text-gray-600 hover:text-gray-900 text-4xl font-bold">
+                &times;
+            </button>
+            <img id="modal-image" class="w-full h-64 object-cover rounded-lg mb-4" />
+            <h2 id="modal-name" class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FBA030] via-[#FE9916] to-[#ED5E0B]"></h2>
+            <p id="modal-title" class="text-gray-600 mt-2"></p>
+            <p id="modal-charla" class="text-gray-600 mt-2"></p>
+            <p id="modal-details" class="mt-4"></p>
+        </div>
+    </div>
+</section>

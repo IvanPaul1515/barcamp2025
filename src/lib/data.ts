@@ -51,13 +51,13 @@ const NAV_ITEMS = [
   //   href: "#desconferencias",
   //   text: "Desconferencias",
   // },
-  // {
-  //   href: "#charlistas",
-  //   text: "Charlistas",
-  // },
   {
-    href: "#patrocinadores",
-    text: "Patrocinadores",
+    href: "#charlistas",
+    text: "Charlistas",
+  },
+  {
+    href: '#patrocinadores',
+    text: 'Patrocinadores',
   },
   {
     href: '#código-de-conducta',
