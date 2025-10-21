@@ -2,10 +2,11 @@
 import { Image } from 'astro:assets'
 import Accordion from '@components/accordion/Accordion.astro'
 import AccordionItem from '@components/accordion/AccordionItem.astro'
+import Container from '@components/container/Container.astro'
+import SpeakersSection from '@components/SpeakerSection/Speakers.astro'
 import Title from '@components/title/Title.astro'
 import Layout from '@layouts/Layout.astro'
 import { ABOUT, NUMBERS } from '@lib/data'
-import Container from '@components/container/Container.astro'
 ---
 
 <Layout>
@@ -244,6 +245,12 @@ import Container from '@components/container/Container.astro'
 		</div>
 	</section>
 
+
+    <section id="charlistas">
+        <SpeakersSection />
+    </section>
+
+
     <!-- Patrocinadores -->
     <section id="patrocinadores" class="py-20">
         <Container className="space-y-10">
@@ -274,7 +281,7 @@ import Container from '@components/container/Container.astro'
                       GEEK PLATINIUM
                     </span>
                     <a href="https://nadserv.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/sponsors/NadServ.png" alt="NadServ"
+                        <img src="/images/sponsors/LogoNadserv.png" alt="NadServ"
                              class="h-20 sm:h-24 lg:h-28 w-auto object-contain rounded-2xl" />
                     </a>
                 </div>
