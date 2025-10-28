@@ -1,5 +1,5 @@
 ---
-const {id, name, title, charla, details, borderColor, imageUr, open} = Astro.props;
+const { id, name, title, charla, details, borderColor, imageUr, open } = Astro.props
 ---
 
 <style>
@@ -33,6 +33,34 @@ const {id, name, title, charla, details, borderColor, imageUr, open} = Astro.pro
   .name.long-name {
       font-size: 1.125rem;
   }
+
+  /* Desktop: mostrar TODO el texto */
+  .charla{
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      overflow: visible;   /* importante: sin recorte en desktop */
+  }
+
+  /* Cuando la ventana baje de ~1360px, recorta a 3 líneas */
+  @media (max-width: 1360px){
+      .charla{
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+  }
+
+  /* Tablets y móviles: 2 líneas */
+  @media (max-width: 768px){
+      .charla{
+          -webkit-line-clamp: 2;
+      }
+  }
+
+
 
 
 
@@ -84,7 +112,7 @@ const {id, name, title, charla, details, borderColor, imageUr, open} = Astro.pro
             {title}
         </p>
 
-        <p class="mt-[0.5rem] text-[0.95rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FBA030] via-[#FE9916] to-[#ED5E0B] text-center leading-snug">
+        <p class="charla mt-[0.5rem] text-[0.95rem] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#FBA030] via-[#FE9916] to-[#ED5E0B] text-center leading-snug">
             {charla}
         </p>
     </div>
