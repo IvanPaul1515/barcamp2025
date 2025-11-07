@@ -34,15 +34,15 @@ const { id, name, title, charla, details, borderColor, imageUr, open } = Astro.p
       font-size: 1.125rem;
   }
 
-  /* Desktop: mostrar TODO el texto */
+
   .charla{
       white-space: normal;
       overflow-wrap: anywhere;
       word-break: break-word;
-      overflow: visible;   /* importante: sin recorte en desktop */
+      overflow: visible;
   }
 
-  /* Cuando la ventana baje de ~1360px, recorta a 3 líneas */
+
   @media (max-width: 1360px){
       .charla{
           display: -webkit-box;

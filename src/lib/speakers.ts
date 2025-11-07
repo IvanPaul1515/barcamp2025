@@ -1,15 +1,16 @@
 export const speakers = [
   {
     id: 1,
-    name: "Pedro De la Cruz",
-    title: "Mobile Developer Specialist",
-    charla: "Apps Offline First con Flutter y Arquitectura Moderna - Patrones prácticos para un mundo sin conexión ",
-    imageUrl: "/images/Speakers/PedroCruz.png",
-    borderColor: "#FE9916",
+    name: 'Pedro De la Cruz',
+    title: 'Mobile Developer Specialist',
+    charla:
+      'Apps Offline First con Flutter y Arquitectura Moderna - Patrones prácticos para un mundo sin conexión ',
+    imageUrl: '/images/Speakers/PedroCruz.png',
+    borderColor: '#FE9916',
     details:
-      "Pedro A. De la Cruz Martínez es un apasionado tecnólogo en mecatrónica y desarrollador de aplicaciones móviles con una sólida experiencia en la creación y coordinación de proyectos de automatización a nivel industrial. Con más de 9 años de trayectoria en el campo, ha destacado como experto en control automático, sistemas de controles y electrónica, trabajando en la optimización de procesos industriales.\n" +
-        "\n" +
-        "Su fascinación por la tecnología lo llevó a adentrarse en el mundo del desarrollo de aplicaciones móviles, convirtiéndose en desarrollador de Flutter desde 2019, donde ha cosechado logros significativos. Como consultor de una prestigiosa empresa europea, ha desempeñado un papel clave en el desarrollo de diversas aplicaciones móviles de gran impacto local e internacional. Su participación como Mobile Lead en más de 5 proyectos ha demostrado su capacidad para liderar equipos y diseñar soluciones innovadoras.",
+      'Pedro A. De la Cruz Martínez es un apasionado tecnólogo en mecatrónica y desarrollador de aplicaciones móviles con una sólida experiencia en la creación y coordinación de proyectos de automatización a nivel industrial. Con más de 9 años de trayectoria en el campo, ha destacado como experto en control automático, sistemas de controles y electrónica, trabajando en la optimización de procesos industriales.\n' +
+      '\n' +
+      'Su fascinación por la tecnología lo llevó a adentrarse en el mundo del desarrollo de aplicaciones móviles, convirtiéndose en desarrollador de Flutter desde 2019, donde ha cosechado logros significativos. Como consultor de una prestigiosa empresa europea, ha desempeñado un papel clave en el desarrollo de diversas aplicaciones móviles de gran impacto local e internacional. Su participación como Mobile Lead en más de 5 proyectos ha demostrado su capacidad para liderar equipos y diseñar soluciones innovadoras.',
   },
   {
     id: 2,
@@ -65,19 +66,19 @@ export const speakers = [
   },
   {
     id: 6,
-    name: "Kelvyn de la Cruz",
-    title: "Líder en Gestión Tecnológica",
-    charla: "De jefes a líderes: el cambio cultural que las empresas necesitan",
-    imageUrl: "/images/Speakers/KelvynCruz.png",
-    borderColor: "#FE9916",
+    name: 'Kelvyn de la Cruz',
+    title: 'Líder en Gestión Tecnológica',
+    charla: 'De jefes a líderes: el cambio cultural que las empresas necesitan',
+    imageUrl: '/images/Speakers/KelvynCruz.png',
+    borderColor: '#FE9916',
     details:
-      "Kelvyn de la Cruz es un profesional de TI y líder con más de 20 años de experiencia en gestión de equipos y proyectos en entornos de alta exigencia. Su trayectoria combina el rigor técnico con una profunda vocación por el desarrollo humano, lo que le ha permitido construir culturas organizacionales más empáticas, colaborativas y sostenibles.\n" +
-        "\n" +
-        "Apasionado por el aprendizaje continuo, ha completado más de 150 cursos y certificaciones en liderazgo, gestión de servicios, tecnología y marketing digital. Esa curiosidad y disciplina lo han llevado a reinventarse constantemente y a compartir sus conocimientos en distintos espacios de formación y creación de contenido.\n" +
-        "\n" +
-        "Kelvyn es el creador de “Humanizando el Liderazgo”, un proyecto en YouTube y redes sociales enfocado en mostrar que el liderazgo auténtico, empático y cercano no solo mejora los resultados de negocio, sino que transforma vidas. Desde ahí, combina historias reales, reflexiones personales y herramientas prácticas para inspirar a otros a liderar con propósito.\n" +
-        "\n" +
-        "Su propósito es claro: apoyar a las personas y a los equipos a crecer desde la confianza, la motivación y la claridad, entendiendo que el recurso más valioso de cualquier organización son las personas.",
+      'Kelvyn de la Cruz es un profesional de TI y líder con más de 20 años de experiencia en gestión de equipos y proyectos en entornos de alta exigencia. Su trayectoria combina el rigor técnico con una profunda vocación por el desarrollo humano, lo que le ha permitido construir culturas organizacionales más empáticas, colaborativas y sostenibles.\n' +
+      '\n' +
+      'Apasionado por el aprendizaje continuo, ha completado más de 150 cursos y certificaciones en liderazgo, gestión de servicios, tecnología y marketing digital. Esa curiosidad y disciplina lo han llevado a reinventarse constantemente y a compartir sus conocimientos en distintos espacios de formación y creación de contenido.\n' +
+      '\n' +
+      'Kelvyn es el creador de “Humanizando el Liderazgo”, un proyecto en YouTube y redes sociales enfocado en mostrar que el liderazgo auténtico, empático y cercano no solo mejora los resultados de negocio, sino que transforma vidas. Desde ahí, combina historias reales, reflexiones personales y herramientas prácticas para inspirar a otros a liderar con propósito.\n' +
+      '\n' +
+      'Su propósito es claro: apoyar a las personas y a los equipos a crecer desde la confianza, la motivación y la claridad, entendiendo que el recurso más valioso de cualquier organización son las personas.',
   },
   {
     id: 7,
@@ -107,34 +108,34 @@ export const speakers = [
   },
   {
     id: 9,
-    name: "Jonathan Morales ",
-    title: "Ingeniero en Sistemas",
+    name: 'Jonathan Morales ',
+    title: 'Ingeniero en Sistemas',
     charla:
-      "Gestión de Servicios de TI para No-Técnicos: Lo que Nadie Te Explica (pero Todos Deberían Saber)",
-    imageUrl: "/images/Speakers/JhonathanMorales.png",
+      'Gestión de Servicios de TI para No-Técnicos: Lo que Nadie Te Explica (pero Todos Deberían Saber)',
+    imageUrl: '/images/Speakers/JhonathanMorales.png',
+    borderColor: '#FE9916',
+    details:
+      'Ingeniero en Sistemas y Máster en Alta Gerencia con mención en Finanzas por el Instituto Tecnológico de Santo Domingo (INTEC). Con más de 15 años de experiencia, he trabajado en la adopción de marcos de buenas prácticas globales como ITIL, ISO/IEC 20000, ISO/IEC 27001, COBIT y PMBOK, orientados a lograr una eficiencia operativa alineada con el negocio en el ámbito de TI.\n' +
+      '\n' +
+      'Actualmente soy Embajador de ITIL reconocido por PeopleCert y lidero la comunidad ITSM República Dominicana, desde donde impulso la gestión de servicios de TI en la región, creando espacios de colaboración y aprendizaje continuo. Mi enfoque se centra en la integración de personas, procesos y tecnología para generar mejoras significativas y sostenibles, transformando la manera en que las organizaciones gestionan la tecnología y la experiencia de sus usuarios.\n' +
+      '\n' +
+      'Apasionado por compartir conocimiento y aprender, disfruto optimizar procesos y explorar nuevas formas de hacer las cosas. Me motiva ver cómo una organización puede evolucionar al abordar sus desafíos de manera integral, y estoy comprometido con ayudar a que empresas y profesionales encuentren en la gestión de TI un motor de productividad, innovación y confianza.',
+  },
+  {
+    id: 10,
+    name: "José  Martínez",
+    title: "Software Engineer",
+    charla:
+        "Ingeniería de Datos con Apache Airflow ",
+    imageUrl: "/images/Speakers/JoseMartinez.png",
     borderColor: "#FE9916",
     details:
-    "Ingeniero en Sistemas y Máster en Alta Gerencia con mención en Finanzas por el Instituto Tecnológico de Santo Domingo (INTEC). Con más de 15 años de experiencia, he trabajado en la adopción de marcos de buenas prácticas globales como ITIL, ISO/IEC 20000, ISO/IEC 27001, COBIT y PMBOK, orientados a lograr una eficiencia operativa alineada con el negocio en el ámbito de TI.\n" +
+    "Software engineer, with experience in full stack software development, project management and machine learning projects. I've worked in the development of innovative customer products in collaboration with multiple software teams and multiple technology stacks, as well as the improvement and development of internal enterprise tools to boost productivity and process efficiency.\n" +
         "\n" +
-        "Actualmente soy Embajador de ITIL reconocido por PeopleCert y lidero la comunidad ITSM República Dominicana, desde donde impulso la gestión de servicios de TI en la región, creando espacios de colaboración y aprendizaje continuo. Mi enfoque se centra en la integración de personas, procesos y tecnología para generar mejoras significativas y sostenibles, transformando la manera en que las organizaciones gestionan la tecnología y la experiencia de sus usuarios.\n" +
+        "I've experience with a wide variety of technologies, mainly Java, Spring Boot, Angular and Docker, as well as R Language and MongoDB for ML projects and Python for Data Processing, ETL's and Data Pipelining. I've also used the Scrum framework as a Product Owner, to lead multiple teams to achieve the business role.\n" +
         "\n" +
-        "Apasionado por compartir conocimiento y aprender, disfruto optimizar procesos y explorar nuevas formas de hacer las cosas. Me motiva ver cómo una organización puede evolucionar al abordar sus desafíos de manera integral, y estoy comprometido con ayudar a que empresas y profesionales encuentren en la gestión de TI un motor de productividad, innovación y confianza."
+        "I consider my self an honest, responsible and organized professional, who thrives solving business related problems with technology, has leadership skills and takes pride in doing the best work possible."
   },
-  // {
-  //   id: 10,
-  //   name: "José  Martínez",
-  //   title: "Software Engineer",
-  //   charla:
-  //       "Ingeniería de Datos con Apache Airflow ",
-  //   imageUrl: "/speakersnoBG/ErmarlinPerez.png",
-  //   borderColor: "#FE9916",
-  //   details:
-  //   "Software engineer, with experience in full stack software development, project management and machine learning projects. I've worked in the development of innovative customer products in collaboration with multiple software teams and multiple technology stacks, as well as the improvement and development of internal enterprise tools to boost productivity and process efficiency.\n" +
-  //       "\n" +
-  //       "I've experience with a wide variety of technologies, mainly Java, Spring Boot, Angular and Docker, as well as R Language and MongoDB for ML projects and Python for Data Processing, ETL's and Data Pipelining. I've also used the Scrum framework as a Product Owner, to lead multiple teams to achieve the business role.\n" +
-  //       "\n" +
-  //       "I consider my self an honest, responsible and organized professional, who thrives solving business related problems with technology, has leadership skills and takes pride in doing the best work possible."
-  // },
   {
     id: 11,
     name: 'Emmanuel Peña',
@@ -170,12 +171,13 @@ export const speakers = [
   },
   {
     id: 14,
-    name: "Emmanuel De La Rosa",
-    title: "Ingeniero Industrial",
-    charla: "Sin cultura de datos no hay transformación digital",
-    imageUrl: "/images/Speakers/EmmanuelRosa.png",
-    borderColor: "#FE9916",
-    details: "Emmanuel De La Rosa es ingeniero industrial con más de 15 años de experiencia liderando proyectos en diversas áreas organizacionales. Recientemente se ha especializado en soluciones de análisis de datos, inteligencia de negocios y automatizaciones, aplicadas a proyectos en construcción, gestión de compras, gestión humana y otras áreas."
+    name: 'Emmanuel De La Rosa',
+    title: 'Ingeniero Industrial',
+    charla: 'Sin cultura de datos no hay transformación digital',
+    imageUrl: '/images/Speakers/EmmanuelRosa.png',
+    borderColor: '#FE9916',
+    details:
+      'Emmanuel De La Rosa es ingeniero industrial con más de 15 años de experiencia liderando proyectos en diversas áreas organizacionales. Recientemente se ha especializado en soluciones de análisis de datos, inteligencia de negocios y automatizaciones, aplicadas a proyectos en construcción, gestión de compras, gestión humana y otras áreas.',
   },
   {
     id: 15,
@@ -189,44 +191,73 @@ export const speakers = [
       '\n' +
       'I love to talk about linux, FOSS, and anything tech related.',
   },
-
-                                                                     // NO CONFIRMADO
-
-  // {
-  //   id: 16,
-  //   name: "Jeffrey Santana",
-  //   title: "software engineer",
-  //   charla: "Vide coding : From zero to hero (Launch )",
-  //   imageUrl: "/speakersnoBG/MarcosBlanco.png",
-  //   borderColor: "#FE9916",
-  //   details: "I'm Jeffrey Santana, a Dominican serial entrepreneur and founder of Split Corp Technologies, where I’ve spent the past 8+ years building software and scaling digital solutions for clients across the U.S., Europe, LATAM, and the Dominican Republic.\n" +
-  //       "\n" +
-  //       "From writing my first lines of code in Java to building full-stack platforms in Ruby, Node.js, and Android, I’ve grown through the trenches — combining strong technical execution with a deep understanding of business needs and user experience.\n" +
-  //       "\n" +
-  //       "At Split Corp, we now focus on AI/ML readiness at scale, helping enterprises across LATAM, the U.S., and Europe transition into the next era of intelligent software systems. Whether it’s automating operations, modernizing legacy systems, or enabling real-time insights — we design with performance, maintainability, and impact in mind.",
-  // },
-
-
-    {
-        id: 17,
-        name: "Iván  Artiles ",
-        title: "Developer ",
-        charla: "WebMob: Your Web-Powered Robotic Companion ",
-        imageUrl: "/images/Speakers/IvanArtiles.png",
-        borderColor: "#FE9916",
-        details: "’m Iván Artiles, a maker, educator, and developer passionate about blending robotics, web technologies, and creativity. I’ve contributed to open-source robotics communities like OttoDIY, built educational platforms that empower students to create with technology, and currently serve as a National Judge for the World Robot Olympiad in the Dominican Republic.\n" +
-            "\n" +
-            "My projects—like WebMob, a web-powered robotic companion—explore how accessible tools can transform learning, play, and daily life. I love inspiring others to build, share, and imagine the future of human–robot interaction."
-    },
-    {
-      id: 18,
-      name: "Mario Victoria ",
-      title: "Telematics Engineer",
-      charla: "De paros a decisiones: OEE en tiempo real con Linealyze",
-      imageUrl: "/images/Speakers/MarioVictoria.png",
-      borderColor: "#FE9916",
-      details: "Ingeniero Telemático con más de 15 años de experiencia en automatización industrial, telemetría y tecnología de la información.\n" +
-          "Actualmente es Director de Operaciones en TSIGO SRL, liderando proyectos de integración de PLC, HMI, VFD, SCADA, MES, IIoT y Cloud Computing en sectores como bebidas, alimentos, energía, salud y construcción.\n" +
-          "Ha desarrollado soluciones de monitoreo de datos, sistemas de bombeo, control de procesos, digitalización de manufactura y OEE en tiempo real, trabajando con empresas como Brugal & Compañía, Sigma Alimentos, Avon, Avery Dennison, Grupo Robles y universidades como PUCMM."
-    },
+  {
+    id: 16,
+    name: "Dominigel Rodriguez \n",
+    title: "Backend Developer",
+    charla: "WasmVerse: Interoperabilidad entre lenguajes.",
+    imageUrl: "/images/Speakers/DominiguelRodriguez.png",
+    borderColor: "#FE9916",
+    details:  "Mi nombre es Dominigel Rodríguez, Ingeniero en Sistemas de la PUCMM, y he pasado los últimos 6 años moviéndome en la intersección del código y la infraestructura. Soy un políglota del backend, con experiencia en Ruby, Java, C#, y Python. Además, mi rol de System Administrator Engineer me permite aplicar una mentalidad DevOps desde el inicio, optimizando despliegues y entornos con Docker, Ansible y scripting en Bash. Mi foco es transformar código funcional en soluciones operativas, escalables y bien administradas.\n",
+  },
+  {
+    id: 17,
+    name: 'Iván  Artiles ',
+    title: 'Developer ',
+    charla: 'WebMob: Your Web-Powered Robotic Companion ',
+    imageUrl: '/images/Speakers/IvanArtiles.png',
+    borderColor: '#FE9916',
+    details:
+      '’m Iván Artiles, a maker, educator, and developer passionate about blending robotics, web technologies, and creativity. I’ve contributed to open-source robotics communities like OttoDIY, built educational platforms that empower students to create with technology, and currently serve as a National Judge for the World Robot Olympiad in the Dominican Republic.\n' +
+      '\n' +
+      'My projects—like WebMob, a web-powered robotic companion—explore how accessible tools can transform learning, play, and daily life. I love inspiring others to build, share, and imagine the future of human–robot interaction.',
+  },
+  {
+    id: 18,
+    name: 'Mario Victoria ',
+    title: 'Telematics Engineer',
+    charla: 'De paros a decisiones: OEE en tiempo real con Linealyze',
+    imageUrl: '/images/Speakers/MarioVictoria.png',
+    borderColor: '#FE9916',
+    details:
+      'Ingeniero Telemático con más de 15 años de experiencia en automatización industrial, telemetría y tecnología de la información.\n' +
+      'Actualmente es Director de Operaciones en TSIGO SRL, liderando proyectos de integración de PLC, HMI, VFD, SCADA, MES, IIoT y Cloud Computing en sectores como bebidas, alimentos, energía, salud y construcción.\n' +
+      'Ha desarrollado soluciones de monitoreo de datos, sistemas de bombeo, control de procesos, digitalización de manufactura y OEE en tiempo real, trabajando con empresas como Brugal & Compañía, Sigma Alimentos, Avon, Avery Dennison, Grupo Robles y universidades como PUCMM.',
+  },
+  {
+    id: 19,
+    name: 'Freddy Peña',
+    title: 'Software Engineer ',
+    charla: 'A Journey From Java 17 to 25: Nine Versions, One Purpose',
+    imageUrl: '/images/Speakers/Freddy.png',
+    borderColor: '#FE9916',
+    details: '"Founder of Alphnology, a passionate Software Engineer and Vaadin Champioon with over 12 years of expertise in Java development and 6+ years of experience managing and implementing SAP B1 projects. Holding a Master’s degree in Web Engineering, I am also a dedicated educator currently teaching at PUCMM and an active member of the Dominican Java Community. I am skilled in designing, developing, and deploying high-performance, scalable applications using Java and various modern frameworks like Spring Boot, Vaadin Flow, Quarkus, Jakarta EE, Vert.x, and Hibernate. I am also an enthusiast of open-source projects. With proven experience in integrating enterprise-level software and managing end-to-end development lifecycles, I focus on code quality, system optimization, and scalability.\\n" +\n' +
+          '        "\\n" +\n' +
+          '        "My approach spans from developing enterprise applications to implementing cloud solutions, always adhering to best practices and maintaining high code quality. I am always learning about the latest emerging technologies and staying up-to-date with new trends in the software development world.\\n" +\n' +
+          '        "\\n" +\n' +
+          '        "Technical Skills\\n" +\n' +
+          '        "Languages: Java, Python\\n" +\n' +
+          '        "Java Frameworks: Spring Boot, VaadinFlow, Hibernate, Quarkus, Vert.x, Jakarta EE\\n" +\n' +
+          '        "Architecture: Microservices, RESTful APIs, SOAP, Event-driven Architecture\\n" +\n' +
+          '        "Databases: PostgreSQL, MySQL, SQL Server, MongoDB, Redis\\n" +\n' +
+          '        "Development Tools: Maven, Git, Jenkins, SonarQube, Terraform, Flyway, Lombok\\n" +\n' +
+          '        "Cloud & DevOps: AWS, Firebase, Docker, Terraform, Git Actions\\n" +\n' +
+          '        "Testing: JUnit, Mockito, Cucumber\\n" +\n' +
+          '        "UI: Vaadin, JSF, JavaFX, Java Swing\\n" +\n' +
+          '        "Mobile: Android, Flutter\\n" +\n' +
+          '        "Others: Linux, Nginx, Traefik, RabbitMQ, gRPC, Debezium",'
+  },
+    // {
+    //     id: 20,
+    //     name: 'Eudris Cabrera',
+    //     title: 'Desarrollador Informático',
+    //     charla: 'Pruebas de integración para servicios REST usando Rest Assured',
+    //     imageUrl: '/images/Speakers/MarioVictoria.png',
+    //     borderColor: '#FE9916',
+    //     details:'Desarrollador de software, líder de JUG, usuario de Linux, entusiasta del código abierto, Java Champion.\n' +
+    //         '\n' +
+    //         'Ganador de la beca Linux Training Scholarship 2014 en la categoría Developer Do-Gooder. Miembro asociado del JCP (Java Community Process). Co-fundador / Organizador del grupo de usuarios Java (Java User Group ) de la República Dominicana (aka Java Dominicano) y JConf Dominicana. Miembro del comité organizador de JakartaOne Livestream en Español en las ediciones 2020, 2021 y 2023.\n' +
+    //         '\n' +
+    //         'En el tiempo libre, escribe artículos, realiza charlas y ayuda en la revisión de documentación técnica en el mundo Java y el código abierto.',
+    // },
 ]

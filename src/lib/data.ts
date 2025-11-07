@@ -43,17 +43,17 @@ const NAV_ITEMS = [
     href: '#acerca',
     text: 'Acerca de',
   },
-  // {
-  //   href: "#invitado",
-  //   text: "Invitado",
-  // },
+  {
+    href: "#keynote",
+    text: "Keynote",
+  },
   // {
   //   href: "#desconferencias",
   //   text: "Desconferencias",
   // },
   {
-    href: "#charlistas",
-    text: "Charlistas",
+    href: '#charlistas',
+    text: 'Charlistas',
   },
   {
     href: '#patrocinadores',

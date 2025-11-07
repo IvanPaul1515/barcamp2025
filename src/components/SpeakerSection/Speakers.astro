@@ -1,8 +1,7 @@
 ---
-import { speakers } from '@lib/speakers.ts';
-import Title from '../title/Title.astro';
-import Modal from './Modal.astro';
-
+import { speakers } from '@lib/speakers.ts'
+import Title from '../title/Title.astro'
+import Modal from './Modal.astro'
 ---
 <style>
     .custom-scrollbar {
@@ -24,11 +23,11 @@ import Modal from './Modal.astro';
 <section id="speakers" class="p-8 md:px-16 lg:px-32">
     <div class="text-center mb-10">
         <Title class="text-3xl md:text-3xl font-semibold text-heading-2">
-            Charlistas
+            Speakers
         </Title>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 md:px-16 lg:px-32 items-stretch">
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 justify-items-center w-full px-4 md:px-8 lg:px-16">
         {speakers.map((speaker) => {
             const { id, name, title, charla, details, borderColor, imageUrl } = speaker;
             return (
@@ -52,6 +51,7 @@ import Modal from './Modal.astro';
             );
         })}
     </div>
+
 
     <div id="modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
         <div class="bg-white p-8 rounded-lg max-w-lg w-full max-h-[90vh] overflow-y-auto relative">
