@@ -44,8 +44,8 @@ const NAV_ITEMS = [
     text: 'Acerca de',
   },
   {
-    href: "#keynote",
-    text: "Keynote",
+    href: '#keynote',
+    text: 'Keynote',
   },
   // {
   //   href: "#desconferencias",

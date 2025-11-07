@@ -123,18 +123,17 @@ export const speakers = [
   },
   {
     id: 10,
-    name: "José  Martínez",
-    title: "Software Engineer",
-    charla:
-        "Ingeniería de Datos con Apache Airflow ",
-    imageUrl: "/images/Speakers/JoseMartinez.png",
-    borderColor: "#FE9916",
+    name: 'José  Martínez',
+    title: 'Software Engineer',
+    charla: 'Ingeniería de Datos con Apache Airflow ',
+    imageUrl: '/images/Speakers/JoseMartinez.png',
+    borderColor: '#FE9916',
     details:
-    "Software engineer, with experience in full stack software development, project management and machine learning projects. I've worked in the development of innovative customer products in collaboration with multiple software teams and multiple technology stacks, as well as the improvement and development of internal enterprise tools to boost productivity and process efficiency.\n" +
-        "\n" +
-        "I've experience with a wide variety of technologies, mainly Java, Spring Boot, Angular and Docker, as well as R Language and MongoDB for ML projects and Python for Data Processing, ETL's and Data Pipelining. I've also used the Scrum framework as a Product Owner, to lead multiple teams to achieve the business role.\n" +
-        "\n" +
-        "I consider my self an honest, responsible and organized professional, who thrives solving business related problems with technology, has leadership skills and takes pride in doing the best work possible."
+      "Software engineer, with experience in full stack software development, project management and machine learning projects. I've worked in the development of innovative customer products in collaboration with multiple software teams and multiple technology stacks, as well as the improvement and development of internal enterprise tools to boost productivity and process efficiency.\n" +
+      '\n' +
+      "I've experience with a wide variety of technologies, mainly Java, Spring Boot, Angular and Docker, as well as R Language and MongoDB for ML projects and Python for Data Processing, ETL's and Data Pipelining. I've also used the Scrum framework as a Product Owner, to lead multiple teams to achieve the business role.\n" +
+      '\n' +
+      'I consider my self an honest, responsible and organized professional, who thrives solving business related problems with technology, has leadership skills and takes pride in doing the best work possible.',
   },
   {
     id: 11,
@@ -193,12 +192,13 @@ export const speakers = [
   },
   {
     id: 16,
-    name: "Dominigel Rodriguez \n",
-    title: "Backend Developer",
-    charla: "WasmVerse: Interoperabilidad entre lenguajes.",
-    imageUrl: "/images/Speakers/DominiguelRodriguez.png",
-    borderColor: "#FE9916",
-    details:  "Mi nombre es Dominigel Rodríguez, Ingeniero en Sistemas de la PUCMM, y he pasado los últimos 6 años moviéndome en la intersección del código y la infraestructura. Soy un políglota del backend, con experiencia en Ruby, Java, C#, y Python. Además, mi rol de System Administrator Engineer me permite aplicar una mentalidad DevOps desde el inicio, optimizando despliegues y entornos con Docker, Ansible y scripting en Bash. Mi foco es transformar código funcional en soluciones operativas, escalables y bien administradas.\n",
+    name: 'Dominigel Rodriguez \n',
+    title: 'Backend Developer',
+    charla: 'WasmVerse: Interoperabilidad entre lenguajes.',
+    imageUrl: '/images/Speakers/DominiguelRodriguez.png',
+    borderColor: '#FE9916',
+    details:
+      'Mi nombre es Dominigel Rodríguez, Ingeniero en Sistemas de la PUCMM, y he pasado los últimos 6 años moviéndome en la intersección del código y la infraestructura. Soy un políglota del backend, con experiencia en Ruby, Java, C#, y Python. Además, mi rol de System Administrator Engineer me permite aplicar una mentalidad DevOps desde el inicio, optimizando despliegues y entornos con Docker, Ansible y scripting en Bash. Mi foco es transformar código funcional en soluciones operativas, escalables y bien administradas.\n',
   },
   {
     id: 17,
@@ -231,33 +231,34 @@ export const speakers = [
     charla: 'A Journey From Java 17 to 25: Nine Versions, One Purpose',
     imageUrl: '/images/Speakers/Freddy.png',
     borderColor: '#FE9916',
-    details: '"Founder of Alphnology, a passionate Software Engineer and Vaadin Champioon with over 12 years of expertise in Java development and 6+ years of experience managing and implementing SAP B1 projects. Holding a Master’s degree in Web Engineering, I am also a dedicated educator currently teaching at PUCMM and an active member of the Dominican Java Community. I am skilled in designing, developing, and deploying high-performance, scalable applications using Java and various modern frameworks like Spring Boot, Vaadin Flow, Quarkus, Jakarta EE, Vert.x, and Hibernate. I am also an enthusiast of open-source projects. With proven experience in integrating enterprise-level software and managing end-to-end development lifecycles, I focus on code quality, system optimization, and scalability.\\n" +\n' +
-          '        "\\n" +\n' +
-          '        "My approach spans from developing enterprise applications to implementing cloud solutions, always adhering to best practices and maintaining high code quality. I am always learning about the latest emerging technologies and staying up-to-date with new trends in the software development world.\\n" +\n' +
-          '        "\\n" +\n' +
-          '        "Technical Skills\\n" +\n' +
-          '        "Languages: Java, Python\\n" +\n' +
-          '        "Java Frameworks: Spring Boot, VaadinFlow, Hibernate, Quarkus, Vert.x, Jakarta EE\\n" +\n' +
-          '        "Architecture: Microservices, RESTful APIs, SOAP, Event-driven Architecture\\n" +\n' +
-          '        "Databases: PostgreSQL, MySQL, SQL Server, MongoDB, Redis\\n" +\n' +
-          '        "Development Tools: Maven, Git, Jenkins, SonarQube, Terraform, Flyway, Lombok\\n" +\n' +
-          '        "Cloud & DevOps: AWS, Firebase, Docker, Terraform, Git Actions\\n" +\n' +
-          '        "Testing: JUnit, Mockito, Cucumber\\n" +\n' +
-          '        "UI: Vaadin, JSF, JavaFX, Java Swing\\n" +\n' +
-          '        "Mobile: Android, Flutter\\n" +\n' +
-          '        "Others: Linux, Nginx, Traefik, RabbitMQ, gRPC, Debezium",'
+    details:
+      '"Founder of Alphnology, a passionate Software Engineer and Vaadin Champioon with over 12 years of expertise in Java development and 6+ years of experience managing and implementing SAP B1 projects. Holding a Master’s degree in Web Engineering, I am also a dedicated educator currently teaching at PUCMM and an active member of the Dominican Java Community. I am skilled in designing, developing, and deploying high-performance, scalable applications using Java and various modern frameworks like Spring Boot, Vaadin Flow, Quarkus, Jakarta EE, Vert.x, and Hibernate. I am also an enthusiast of open-source projects. With proven experience in integrating enterprise-level software and managing end-to-end development lifecycles, I focus on code quality, system optimization, and scalability.\\n" +\n' +
+      '        "\\n" +\n' +
+      '        "My approach spans from developing enterprise applications to implementing cloud solutions, always adhering to best practices and maintaining high code quality. I am always learning about the latest emerging technologies and staying up-to-date with new trends in the software development world.\\n" +\n' +
+      '        "\\n" +\n' +
+      '        "Technical Skills\\n" +\n' +
+      '        "Languages: Java, Python\\n" +\n' +
+      '        "Java Frameworks: Spring Boot, VaadinFlow, Hibernate, Quarkus, Vert.x, Jakarta EE\\n" +\n' +
+      '        "Architecture: Microservices, RESTful APIs, SOAP, Event-driven Architecture\\n" +\n' +
+      '        "Databases: PostgreSQL, MySQL, SQL Server, MongoDB, Redis\\n" +\n' +
+      '        "Development Tools: Maven, Git, Jenkins, SonarQube, Terraform, Flyway, Lombok\\n" +\n' +
+      '        "Cloud & DevOps: AWS, Firebase, Docker, Terraform, Git Actions\\n" +\n' +
+      '        "Testing: JUnit, Mockito, Cucumber\\n" +\n' +
+      '        "UI: Vaadin, JSF, JavaFX, Java Swing\\n" +\n' +
+      '        "Mobile: Android, Flutter\\n" +\n' +
+      '        "Others: Linux, Nginx, Traefik, RabbitMQ, gRPC, Debezium",',
   },
-    // {
-    //     id: 20,
-    //     name: 'Eudris Cabrera',
-    //     title: 'Desarrollador Informático',
-    //     charla: 'Pruebas de integración para servicios REST usando Rest Assured',
-    //     imageUrl: '/images/Speakers/MarioVictoria.png',
-    //     borderColor: '#FE9916',
-    //     details:'Desarrollador de software, líder de JUG, usuario de Linux, entusiasta del código abierto, Java Champion.\n' +
-    //         '\n' +
-    //         'Ganador de la beca Linux Training Scholarship 2014 en la categoría Developer Do-Gooder. Miembro asociado del JCP (Java Community Process). Co-fundador / Organizador del grupo de usuarios Java (Java User Group ) de la República Dominicana (aka Java Dominicano) y JConf Dominicana. Miembro del comité organizador de JakartaOne Livestream en Español en las ediciones 2020, 2021 y 2023.\n' +
-    //         '\n' +
-    //         'En el tiempo libre, escribe artículos, realiza charlas y ayuda en la revisión de documentación técnica en el mundo Java y el código abierto.',
-    // },
+  // {
+  //     id: 20,
+  //     name: 'Eudris Cabrera',
+  //     title: 'Desarrollador Informático',
+  //     charla: 'Pruebas de integración para servicios REST usando Rest Assured',
+  //     imageUrl: '/images/Speakers/MarioVictoria.png',
+  //     borderColor: '#FE9916',
+  //     details:'Desarrollador de software, líder de JUG, usuario de Linux, entusiasta del código abierto, Java Champion.\n' +
+  //         '\n' +
+  //         'Ganador de la beca Linux Training Scholarship 2014 en la categoría Developer Do-Gooder. Miembro asociado del JCP (Java Community Process). Co-fundador / Organizador del grupo de usuarios Java (Java User Group ) de la República Dominicana (aka Java Dominicano) y JConf Dominicana. Miembro del comité organizador de JakartaOne Livestream en Español en las ediciones 2020, 2021 y 2023.\n' +
+  //         '\n' +
+  //         'En el tiempo libre, escribe artículos, realiza charlas y ayuda en la revisión de documentación técnica en el mundo Java y el código abierto.',
+  // },
 ]
