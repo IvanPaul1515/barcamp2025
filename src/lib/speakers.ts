@@ -248,17 +248,17 @@ export const speakers = [
       '        "Mobile: Android, Flutter\\n" +\n' +
       '        "Others: Linux, Nginx, Traefik, RabbitMQ, gRPC, Debezium",',
   },
-  // {
-  //     id: 20,
-  //     name: 'Eudris Cabrera',
-  //     title: 'Desarrollador Informático',
-  //     charla: 'Pruebas de integración para servicios REST usando Rest Assured',
-  //     imageUrl: '/images/Speakers/MarioVictoria.png',
-  //     borderColor: '#FE9916',
-  //     details:'Desarrollador de software, líder de JUG, usuario de Linux, entusiasta del código abierto, Java Champion.\n' +
-  //         '\n' +
-  //         'Ganador de la beca Linux Training Scholarship 2014 en la categoría Developer Do-Gooder. Miembro asociado del JCP (Java Community Process). Co-fundador / Organizador del grupo de usuarios Java (Java User Group ) de la República Dominicana (aka Java Dominicano) y JConf Dominicana. Miembro del comité organizador de JakartaOne Livestream en Español en las ediciones 2020, 2021 y 2023.\n' +
-  //         '\n' +
-  //         'En el tiempo libre, escribe artículos, realiza charlas y ayuda en la revisión de documentación técnica en el mundo Java y el código abierto.',
-  // },
+  {
+      id: 20,
+      name: 'Eudris Cabrera',
+      title: 'Desarrollador Informático',
+      charla: 'Pruebas de integración para servicios REST usando Rest Assured',
+      imageUrl: '/images/Speakers/EudrisCabrera.png',
+      borderColor: '#FE9916',
+      details:'Desarrollador de software, líder de JUG, usuario de Linux, entusiasta del código abierto, Java Champion.\n' +
+          '\n' +
+          'Ganador de la beca Linux Training Scholarship 2014 en la categoría Developer Do-Gooder. Miembro asociado del JCP (Java Community Process). Co-fundador / Organizador del grupo de usuarios Java (Java User Group ) de la República Dominicana (aka Java Dominicano) y JConf Dominicana. Miembro del comité organizador de JakartaOne Livestream en Español en las ediciones 2020, 2021 y 2023.\n' +
+          '\n' +
+          'En el tiempo libre, escribe artículos, realiza charlas y ayuda en la revisión de documentación técnica en el mundo Java y el código abierto.',
+  },
 ]

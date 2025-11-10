@@ -4,6 +4,7 @@ import Accordion from '@components/accordion/Accordion.astro'
 import AccordionItem from '@components/accordion/AccordionItem.astro'
 import Container from '@components/container/Container.astro'
 import SpeakersSection from '@components/SpeakerSection/Speakers.astro'
+import Desconferencias from '@components/Desconferencias/desconferencias.astro'
 import Title from '@components/title/Title.astro'
 import Layout from '@layouts/Layout.astro'
 import { ABOUT, NUMBERS } from '@lib/data'
@@ -133,33 +134,31 @@ import { ABOUT, NUMBERS } from '@lib/data'
 		</div>
 	</section>
 
+    <!-- KeyNote Section -->
+    <section id="keynote" class="py-8">
+        <div class="text-center max-w-3xl mx-auto"></div>
+        <Title>Keynote</Title>
 
-    <section
-            id="keynote"
-            class="py-16 text-center transition-colors duration-500
-            rounded-4xl
-                  bg-gradient-to-b from-[#ffe8d0] via-[#fff4ea] to-[#e1f3ff]
-         dark:bg-gradient-to-b dark:from-[#1a1a1a] dark:via-[#2b0a00] dark:to-[#002b44]">
-        <h2 class="text-3xl font-bold text-black dark:text-white mb-8">Keynote Speaker</h2>
+        <section class="mx-auto w-full max-w-7xl px-5 sm:px-2 md:px-4 lg:px-5 mt-8 flex justify-center">
+            <!-- Imagen modo claro -->
+            <img
+                    src="/images/Speakers/KeynoteLight.png"
+                    alt="Pedro Sanders"
+                    class="rounded-3xl w-full max-w-[1100px] mx-auto object-contain dark:hidden"
+            />
 
-        <!-- marco = imagen -->
-        <figure class="mx-auto w-full max-w-[420px] sm:max-w-[520px] px-4">
-            <!-- borde/halo del marco -->
-            <div
-                    class="rounded-3xl p-[3px] shadow-2xl transition-all
-             bg-gray-200 dark:bg-gradient-to-b dark:from-[#ff6a00] dark:to-[#00aaff]">
-                <!-- la foto ocupa todo el marco -->
-                <img
-                        src="/images/Speakers/SpeakerPedroSanders.png"
-                        alt="Pedro Sanders"
-                        class="block w-full h-auto rounded-[calc(theme(borderRadius.3xl)-3px)]"
-                />
-            </div>
-        </figure>
+            <!-- Imagen modo oscuro -->
+            <img
+                    src="/images/Speakers/KeynoteDark.png"
+                    alt="Pedro Sanders Dark"
+                    class="rounded-3xl w-full max-w-[1100px] mx-auto object-contain hidden dark:block"
+            />
+        </section>
     </section>
 
-
-
+    <section id="desconferencias">
+        <Desconferencias/>
+    </section>
 
 
     <!-- Speakers -->
