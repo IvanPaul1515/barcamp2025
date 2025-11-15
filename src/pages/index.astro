@@ -3,8 +3,8 @@ import { Image } from 'astro:assets'
 import Accordion from '@components/accordion/Accordion.astro'
 import AccordionItem from '@components/accordion/AccordionItem.astro'
 import Container from '@components/container/Container.astro'
-import SpeakersSection from '@components/SpeakerSection/Speakers.astro'
 import Desconferencias from '@components/Desconferencias/desconferencias.astro'
+import SpeakersSection from '@components/SpeakerSection/Speakers.astro'
 import Title from '@components/title/Title.astro'
 import Layout from '@layouts/Layout.astro'
 import { ABOUT, NUMBERS } from '@lib/data'
@@ -40,14 +40,15 @@ import { ABOUT, NUMBERS } from '@lib/data'
            bg-[#FFF1E5] dark:bg-[#361804]
            rounded-3xl border border-[#ED5E0B]/30
            shadow-[0_8px_30px_rgba(251,160,48,0.25)]">
-                <img src="/images/ticket.png" alt="Ticket Barcamp 2025" class="w-48 h-auto mb-2" />
-
+                <div class="w-40 h-40 mb-2 bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]
+            mask-[url('/agenda.png')] mask-no-repeat mask-center mask-contain">
+                </div>
                 <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]">
-                    ENTRADAS DISPONIBLES
+                    AGENDA DEL EVENTO
                 </h2>
 
                 <p class="text-lg md:text-xl font-semibold text-[#361804] dark:text-white/80">
-                    CÓDIGO, CONEXIÓN y COMUNIDAD
+                    Consulta horarios, charlas y desconferencias
                 </p>
 
                 <a
@@ -61,7 +62,7 @@ import { ABOUT, NUMBERS } from '@lib/data'
                        hover:opacity-90 hover:shadow-lg hover:scale-105
                        transition-all duration-300 ease-in-out cursor-pointer"
                                 >
-                        Adquiere tu entrada
+                        Ver agenda
                     </button>
                 </a>
 
