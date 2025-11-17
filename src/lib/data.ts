@@ -48,9 +48,13 @@ const NAV_ITEMS = [
     text: 'Keynote',
   },
   {
-    href: "#desconferencias",
-    text: "Desconferencias",
+    href: '#desconferencias',
+    text: 'Desconferencias',
   },
+    {
+        href: '#panel',
+        text: 'Panel',
+    },
   {
     href: '#charlistas',
     text: 'Charlistas',

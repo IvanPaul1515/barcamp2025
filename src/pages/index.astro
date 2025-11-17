@@ -22,51 +22,60 @@ import { ABOUT, NUMBERS } from '@lib/data'
                 class="max-h-96 mx-auto"
         />
 
-
         <div class="mx-auto mt-10 max-w-7xl px-6 flex flex-col lg:flex-row items-start lg:items-center justify-center gap-10 lg:gap-16">
-            <div class="text-center lg:text-left lg:w-1/2">
+            <div class="flex items-center justify-center h-full">
                 <h1 class="font-bold text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight text-[#161616] dark:text-white">
-                    Vive la experiencia Barcamp 2025<br />
                     <span class="text-transparent bg-clip-text bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]">
-					Noviembre 15
-				</span><br />
-                    PUCMM Santiago
+                     CÓDIGO, CONEXIÓN y COMUNIDAD
+				</span>
                 </h1>
             </div>
 
 
-            <div
-                    class="flex flex-col items-center text-center gap-4 p-8
-           bg-[#FFF1E5] dark:bg-[#361804]
-           rounded-3xl border border-[#ED5E0B]/30
-           shadow-[0_8px_30px_rgba(251,160,48,0.25)]">
-                <div class="w-40 h-40 mb-2 bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]
-            mask-[url('/agenda.png')] mask-no-repeat mask-center mask-contain">
-                </div>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]">
-                    AGENDA DEL EVENTO
-                </h2>
+        <!--<div class="mx-auto mt-10 max-w-7xl px-6 flex flex-col lg:flex-row items-start lg:items-center justify-center gap-10 lg:gap-16">-->
+        <!--    <div class="text-center lg:text-left lg:w-1/2">-->
+        <!--        <h1 class="font-bold text-3xl/tight sm:text-4xl/tight md:text-5xl/tight xl:text-6xl/tight text-[#161616] dark:text-white">-->
+        <!--            Vive la experiencia Barcamp 2025<br />-->
+        <!--            <span class="text-transparent bg-clip-text bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]">-->
+		<!--			Noviembre 15-->
+		<!--		</span><br />-->
+        <!--            PUCMM Santiago-->
+        <!--        </h1>-->
+        <!--    </div>-->
 
-                <p class="text-lg md:text-xl font-semibold text-[#361804] dark:text-white/80">
-                    Consulta horarios, charlas y desconferencias
-                </p>
 
-                <a
-                        href="https://schedule.barcamp.org.do/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="mt-2 inline-block"
-                >
-                    <button class="px-6 py-3 text-lg font-semibold text-white rounded-2xl
-                       bg-gradient-to-r from-[#FBA030] via-[#FE9916] to-[#ED5E0B]
-                       hover:opacity-90 hover:shadow-lg hover:scale-105
-                       transition-all duration-300 ease-in-out cursor-pointer"
-                                >
-                        Ver agenda
-                    </button>
-                </a>
+           <!-- <div-->
+           <!--         class="flex flex-col items-center text-center gap-4 p-8-->
+           <!--bg-[#FFF1E5] dark:bg-[#361804]-->
+           <!--rounded-3xl border border-[#ED5E0B]/30-->
+           <!--shadow-[0_8px_30px_rgba(251,160,48,0.25)]">-->
+           <!--     <div class="w-40 h-40 mb-2 bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]-->
+           <!-- mask-[url('/agenda.png')] mask-no-repeat mask-center mask-contain">-->
+           <!--     </div>-->
+           <!--     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#FBA030] via-[#FE9916] to-[#ED5E0B]">-->
+           <!--         AGENDA DEL EVENTO-->
+           <!--     </h2>-->
 
-            </div>
+           <!--     <p class="text-lg md:text-xl font-semibold text-[#361804] dark:text-white/80">-->
+           <!--         Consulta horarios, charlas y desconferencias-->
+           <!--     </p>-->
+
+           <!--     <a-->
+           <!--             href="https://schedule.barcamp.org.do/"-->
+           <!--             target="_blank"-->
+           <!--             rel="noopener noreferrer"-->
+           <!--             class="mt-2 inline-block"-->
+           <!--     >-->
+           <!--         <button class="px-6 py-3 text-lg font-semibold text-white rounded-2xl-->
+           <!--            bg-gradient-to-r from-[#FBA030] via-[#FE9916] to-[#ED5E0B]-->
+           <!--            hover:opacity-90 hover:shadow-lg hover:scale-105-->
+           <!--            transition-all duration-300 ease-in-out cursor-pointer"-->
+           <!--                     >-->
+           <!--             Ver agenda-->
+           <!--         </button>-->
+           <!--     </a>-->
+
+           <!-- </div>-->
 
         </div>
         <!-- Background Orange Spot -->
@@ -161,6 +170,19 @@ import { ABOUT, NUMBERS } from '@lib/data'
         <Desconferencias/>
     </section>
 
+    <!-- Panel Section -->
+    <section id="panel" class="py-8">
+        <div class="text-center max-w-3xl mx-auto"></div>
+        <Title>Panel</Title>
+
+        <section class="mx-auto w-full max-w-7xl px-5 sm:px-2 md:px-4 lg:px-5 mt-8 flex justify-center">
+            <img
+                    src="/images/Speakers/Panel.png"
+                    alt="Panel"
+                    class="rounded-3xl w-full max-w-[1100px] mx-auto object-contain"
+            />
+        </section>
+    </section>
 
     <!-- Speakers -->
     <section id="charlistas">
